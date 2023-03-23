@@ -5,7 +5,7 @@ Download from W&B the raw dataset and apply some basic data cleaning, exporting 
 import argparse
 import logging
 import wandb
-import pandas 
+import pandas
 
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
@@ -26,6 +26,9 @@ def go(args):
 
     df= pandas.read_csv(artifact_local_path)
     idx = df['price'].between(args.min_price, args.max_price)
+    df = df[idx].copy()
+
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
     df = df[idx].copy()
     # Convert last_review to datetime
     df['last_review'] = pandas.to_datetime(df['last_review'])
@@ -51,42 +54,42 @@ if __name__ == "__main__":
 
 
     parser.add_argument(
-        "--input_artifact", 
+        "--input_artifact",
         type=str,
         help="Fully-qualified name for the input artifact",
         required=True
     )
 
     parser.add_argument(
-        "--output_artifact", 
+        "--output_artifact",
         type=str,
         help=" name for the output artifact",
         required=True
     )
 
     parser.add_argument(
-        "--output_type", 
+        "--output_type",
         type=str,
         help=" type of the artifact",
         required=True
     )
 
     parser.add_argument(
-        "--output_description", 
+        "--output_description",
         type=str,
         help="Desription of the output artifact",
         required=True
     )
 
     parser.add_argument(
-        "--min_price", 
+        "--min_price",
         type=float,
         help="Minimum rental price of the house",
         required=True
     )
 
     parser.add_argument(
-        "--max_price", 
+        "--max_price",
         type=float,
         help="Maximum rental price of the house",
         required=True
