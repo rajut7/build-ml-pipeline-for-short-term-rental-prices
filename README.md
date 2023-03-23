@@ -29,7 +29,7 @@ In this project you will build such a pipeline.
   * [Visualize the pipeline](#visualize-the-pipeline)
   * [Release the pipeline](#release-the-pipeline)
   * [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
-- [Cleaning up](#cleaning-up)
+- [weights&bias](#weights&bias)
 
 ## Preliminary steps
 ### Fork the Starter kit
