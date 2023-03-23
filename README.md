@@ -30,6 +30,7 @@ In this project you will build such a pipeline.
   * [Release the pipeline](#release-the-pipeline)
   * [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
 - [Wandb](#weights_&_bias)
+  Go to [https://wandb.ai/rajutadi/nyc_airbnb?workspace=user-rajutadi](https://wandb.ai/rajutadi/nyc_airbnb?workspace=user-rajutadi)
 
 ## Preliminary steps
 ### Fork the Starter kit
@@ -567,7 +568,3 @@ you have trained your new model on the new data.
 ## License
 
 [License](LICENSE.txt)
-
-### Wandb
-
-Go to [https://wandb.ai/rajutadi/nyc_airbnb?workspace=user-rajutadi](https://wandb.ai/rajutadi/nyc_airbnb?workspace=user-rajutadi)
