@@ -568,6 +568,4 @@ you have trained your new model on the new data.
 
 [License](LICENSE.txt)
 
-### weights&bias
 
-Go to [https://wandb.ai/rajutadi/nyc_airbnb?workspace=user-rajutadi](https://wandb.ai/rajutadi/nyc_airbnb?workspace=user-rajutadi)
