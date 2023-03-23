@@ -29,7 +29,7 @@ In this project you will build such a pipeline.
   * [Visualize the pipeline](#visualize-the-pipeline)
   * [Release the pipeline](#release-the-pipeline)
   * [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
-- [weights & bias](#weights_bias)
+- [Weights & bias](#weights_&_bias)
 
 ## Preliminary steps
 ### Fork the Starter kit
@@ -568,9 +568,6 @@ you have trained your new model on the new data.
 
 [License](LICENSE.txt)
 
-### Cleaning up
+### Weights & Bias
 
 Go to [https://wandb.ai/rajutadi/nyc_airbnb?workspace=user-rajutadi](https://wandb.ai/rajutadi/nyc_airbnb?workspace=user-rajutadi)
-
-
-
